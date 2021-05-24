@@ -1,7 +1,8 @@
 from flask import Flask
+import platform
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello There World!"
+    return "Hello2! This is Python " + platform.python_version()
