@@ -21,6 +21,8 @@ jobs:
           command: |
             . venv/bin/activate
             python tests.py
+      - store_test_results:
+          path: test-results
       - store_artifacts:
           path: test-reports/
           destination: python_app
