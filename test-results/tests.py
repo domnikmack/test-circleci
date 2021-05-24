@@ -1,4 +1,4 @@
-from hello import app
+from ..hello import app
 with app.test_client() as c:
     response = c.get('/')
     assert response.data.startswith('Hello! This is Python 2')
